@@ -1,0 +1,44 @@
+main: me.buttermc.Main
+name: Me.buttermc
+description: Plugin Del server ButterMc
+authors: [ MavyDragons ]
+
+website: buttermc.ml
+version: '${project.version}'
+api-version: 1.15
+
+depend: [ Vault ]
+softdepend: [ PlaceholderAPI ]
+
+commands:
+  hello:
+    description: Ti risponde con Hello
+  doctor:
+    description: Ti cura
+  feed:
+    aliases: eat
+    description: This command will feed you!
+    permission: feed.use
+    usage: "Usage: /<command> "
+  kit:
+    description: Apre una GUI per comprare un kit
+  launch:
+    aliases: lch
+  starTool:
+    description: un Tridente Antico
+  gamble:
+  skull:
+    description: Ti da la testa di chi vuoi
+  randomBlock:
+  mystats:
+    description: Il tuo Stato
+  pv:
+    description: Una PrivareVaults
+  telepathy:
+  trails:
+  spawnhusk:
+  bonus:
+  paint:
+  tag:
+  map:
+  buttermc:

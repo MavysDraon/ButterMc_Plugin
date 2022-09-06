@@ -1,0 +1,17 @@
+reload:
+  message: "&a&lButterMc &fbeen &f&lReloaded"
+
+heal-amount: 20
+
+messages:
+  no-permission: "&cYou cannot do that!"
+
+
+blocks:
+  DIRT:
+    - SAND
+    - DIRT
+    - GRASS_BLOCK
+  SAND:
+    - SAND
+    - DIRT
