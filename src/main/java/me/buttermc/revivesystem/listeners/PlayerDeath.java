@@ -1,4 +1,4 @@
-package me.buttermc.revivesystem.listeners;
+/*package me.buttermc.revivesystem.listeners;
 
 import me.buttermc.revivesystem.models.CorpseEntity;
 import org.bukkit.ChatColor;
@@ -40,11 +40,11 @@ public class PlayerDeath implements Listener {
         }
     }
 
-    /***
-     * Returns a respawn potion for dead player
-     * @param player - dead player
-     * @return - ItemStack potion
-     */
+
+     / Returns a respawn potion for dead player
+     / @param player - dead player
+     / @return - ItemStack potion
+
     private ItemStack getRespawnItem(Player player) {
         ItemStack potion = new ItemStack(Material.POTION);
         ItemMeta meta = potion.getItemMeta();
@@ -59,4 +59,4 @@ public class PlayerDeath implements Listener {
         return potion;
     }
 
-}
+}*/

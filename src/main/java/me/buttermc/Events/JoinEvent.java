@@ -10,8 +10,12 @@ public class JoinEvent implements Listener{
 
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
-        event.setJoinMessage(ChatColor.AQUA+ "Welcome to the server "
+        event.setJoinMessage(format("&a&lButter&f&lMc &7> &bWelcome to the server ")
                 + event.getPlayer());
+    }
+
+    private String format(String msg) {
+        return ChatColor.translateAlternateColorCodes('&', msg);
     }
 
 }

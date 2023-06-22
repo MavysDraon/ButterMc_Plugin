@@ -196,6 +196,7 @@ public final class Main extends JavaPlugin implements Listener{
         getCommand("map").setExecutor(new ImageCommand());
         getCommand("getID").setExecutor(new GetLicense());
         getCommand("buttermc").setExecutor(new HelpCommand());
+        getCommand("redeem").setExecutor(new RedeemCommand(this));
     }
     public void registerCmdTab() {
         getCommand("mystats").setTabCompleter(new StatTab());

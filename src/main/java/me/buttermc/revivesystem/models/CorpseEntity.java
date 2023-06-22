@@ -1,22 +1,6 @@
 package me.buttermc.revivesystem.models;
 
-import com.mojang.authlib.GameProfile;
-import com.mojang.authlib.properties.Property;
-import com.mojang.datafixers.util.Pair;
-import net.minecraft.server.v1_15_R1.*;
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_15_R1.CraftServer;
-import org.bukkit.craftbukkit.v1_15_R1.CraftWorld;
-import org.bukkit.craftbukkit.v1_15_R1.entity.CraftPlayer;
-import org.bukkit.craftbukkit.v1_15_R1.inventory.CraftItemStack;
-import org.bukkit.craftbukkit.v1_15_R1.scoreboard.CraftScoreboard;
-import org.bukkit.entity.Entity;
-import org.bukkit.entity.Player;
 
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.List;
 
 public class CorpseEntity {
 

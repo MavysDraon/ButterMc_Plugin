@@ -15,3 +15,7 @@ blocks:
   SAND:
     - SAND
     - DIRT
+codici:
+  premio1:
+    ricompensa:
+      - "eco give %player% 100"
