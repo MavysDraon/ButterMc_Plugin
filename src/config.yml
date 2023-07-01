@@ -1,5 +1,5 @@
-reload:
-  message: "&a&lButterMc &fbeen &f&lReloaded"
+reload_message: "&a&lButter&f&lMc &fè stato &f&lReloaded"
+
 
 heal-amount: 20
 

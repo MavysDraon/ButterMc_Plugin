@@ -1,6 +1,5 @@
 package me.buttermc;
 
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -30,7 +29,12 @@ public class RedeemCommand implements CommandExecutor {
 
         String code = args[0]; // Ottieni il codice inserito dall'utente
 
-        // Qui puoi aggiungere la logica per controllare e gestire il codice inserito dall'utente
+        if (!plugin.getConfig().contains("codici." + code)) {
+            player.sendMessage("Il codice inserito non esiste.");
+            return true;
+        }
+
+        // Il codice esiste, puoi eseguire l'azione desiderata
 
         // Esempio di azione da eseguire quando il codice è valido
         plugin.getConfig().set("codici." + code + ".ricompensa", "eco give %player% 100");
@@ -40,4 +44,5 @@ public class RedeemCommand implements CommandExecutor {
 
         return true;
     }
+
 }
