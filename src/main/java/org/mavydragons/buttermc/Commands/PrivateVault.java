@@ -30,13 +30,7 @@ public class PrivateVault implements CommandExecutor, Listener {
 
                 player.openInventory(inv);
 
-                Main.senderMessage(sender, "&cNon hai il permesso per eseguire questo comando.");
-                return true;
-                player.sendMessage(ChatColor.translateAlternateColorCodes('&', Main.configuration.getConfig().getString("messages.heal").replace("%player%", p.getName())));
 
-                Main.configuration.reloadConfig();
-                Main.configuration.getConfig().set("messages.no-permission", "&cYou cannot do that!");
-                Main.configuration.saveConfig();
             }
             sender.sendMessage(ChatColor.DARK_RED + "You don't have permission to do that!");
             return true;

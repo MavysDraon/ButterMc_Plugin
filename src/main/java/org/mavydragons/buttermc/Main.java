@@ -221,17 +221,6 @@ public final class Main extends JavaPlugin implements Listener {
     }
 
 
-    public static void senderMessage(CommandSender sender, String message) {
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
-            if (Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")) {
-                message = PlaceholderAPI.setPlaceholders(player, message);
-            }
-        }
-        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
-    }
-
-
 
 
 
