@@ -1,0 +1,55 @@
+name: ButterMc
+version: '${project.version}'
+main: org.mavydragons.buttermc.Main
+api-version: '1.20'
+authors: [MavyDragons]
+description: Plugin per il server ButterMc
+website: buttermc.ml
+
+depend: [Vault]
+softdepend: [PlaceholderAPI]
+
+commands:
+  buttermc:
+    description: Comando principale di ButterMC
+    usage: "/buttermc <sottocomando>"
+    aliases: [bmc, pv, mystats, startool, gamble, feed, bonus, paint, skull, launch, kit, hello, doctor, godboots, help]
+  hello:
+    description: Ti risponde con Hello
+  doctor:
+    description: Ti cura
+  feed:
+    aliases: eat
+    description: This command will feed you!
+    permission: feed.use
+    usage: "Usage: /<command> "
+  kit:
+    description: Apre una GUI per comprare un kit
+  launch:
+    aliases: lch
+  starTool:
+    description: un Tridente Antico
+  gamble:
+  skull:
+    description: Ti da la testa di chi vuoi
+  randomBlock:
+  mystats:
+    description: Il tuo Stato
+  pv:
+    description: Una PrivareVaults
+  telepathy:
+  trails:
+  spawnhusk:
+  bonus:
+  paint:
+  tag:
+  map:
+permissions :
+  permission.node:
+    description: "This is a permission node"
+    default: op
+    children:
+      permission.node.child: true
+  another.permission.node:
+    description: "This is another permission node"
+    default: not op
